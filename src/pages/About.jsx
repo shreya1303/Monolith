@@ -1,65 +1,33 @@
 import React from "react";
 
-
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto px-6 pt-20 py-16">
-      {/* Top Section - Heading and Images */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between max-w-full overflow-hidden">
-        {/* Left: Bold Heading */}
-        <h1 className="text-4xl sm:text-5xl font-bold text-blue-600 leading-tight max-w-lg">
-          Empowering Creatives with World-Class Training!
-        </h1>
+    <div className="relative py-24 px-6 bg-white flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
+      {/* Background Circles */}
+      <div className="absolute top-0 left-[-10%] w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 transform translate-y-[30%] md:w-48 md:h-48 sm:w-40 sm:h-40" />
+      <div className="absolute top-0 right-[-10%] w-56 h-56 rounded-full bg-[#ffe6e9] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" />
+      <div className="absolute bottom-0 right-[5%] w-56 h-56 rounded-full bg-[#d9efec] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" />
 
-        {/* Right: Two Small Images */}
-        <div className="flex space-x-4 mt-6 lg:mt-0">
-          <img
-            src="small1.jpg"
-            alt="Creative Work"
-            className="w-40 h-32 rounded-lg shadow-lg"
-          />
-          <img
-            src="small1.jpg"
-            alt="VFX Training"
-            className="w-40 h-32 rounded-lg shadow-lg"
-          />
-          <img
-            src="small1.jpg"
-            alt="VFX Training"
-            className="w-40 h-32 rounded-lg shadow-lg"
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-col lg:flex-row items-center lg:items-start mt-12 gap-8">
-        {/* Left: Large Image */}
-        <div className="relative w-full lg:w-1/2">
-          <img
-            src="large.jpg"
-            alt="Monolith Academy"
-            className="w-full h-[400px] object-cover object-top rounded-lg shadow-2xl"
-          />
-        </div>
-
-        {/* Right: About Us Text */}
-        <div className="lg:w-1/2 text-gray-800">
-          <h2 className="text-3xl font-semibold text-gray-700">
-            About Monolith Academy
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed">
-            Welcome to Monolith Academy, a premier destination for aspiring
-            creatives looking to master the art of Graphic Design, 3D Animation,
-            and VFX. Our institute is dedicated to nurturing talent, equipping
-            students with industry-relevant skills, and empowering them to excel
-            in the dynamic world of digital design and visual effects.
-          </p>
-          <p className="mt-4 text-lg leading-relaxed">
-            At Monolith Academy, we believe that quality education is the
-            foundation of professional success. Our structured curriculum,
-            state-of-the-art infrastructure, and hands-on training approach
-            create an immersive learning experience.
-          </p>
-        </div>
+      {/* Content */}
+      <div className="max-w-3xl w-full text-center px-4">
+        <h2 className="text-6xl font-semibold text-[#599960] md:text-5xl sm:text-4xl">
+          About Us
+        </h2>
+        <p className="mt-4 text-black text-xl leading-8 sm:text-lg sm:leading-7">
+          At Monolith Academy, we are dedicated to shaping the next generation
+          of Graphic Designers, 3D Animators, and VFX Artists. <br />
+          Our industry-focused courses provide hands-on training, equipping
+          students with the skills needed to thrive in the creative industry.{" "}
+          <br />
+          To ensure excellence in education, we conduct comprehensive faculty
+          training programs, keeping our instructors updated with the latest
+          tools and trends. <br />
+          With a structured curriculum, cutting-edge facilities, and expert
+          guidance, we bridge the gap between learning and real-world
+          application. <br />
+          Join us and take your first step toward a successful career in digital
+          design and animation!
+        </p>
       </div>
 
       {/* Why Choose Us Section */}
