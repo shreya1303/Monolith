@@ -40,15 +40,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen p-8 pt-20 bg-white">
+    <div className="min-h-screen p-8 py-24 bg-white">
       {/* Heading */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 text-[#599960]">
+      <h1 className="text-4xl sm:text-5xl md:text-4xl font-bold text-center mb-8 text-[#599960]">
         Contact Us
       </h1>
 
       <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6">
         {/* Left Side: Contact Information */}
-        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border border-black mb-6 md:mb-0">
+        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border-2 border-black mb-6 md:mb-0">
           <div>
             <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
             <p>
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border border-black">
+        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border-2 border-black">
           <h2 className="text-2xl font-bold mb-4 text-center">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
@@ -108,7 +108,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-[#599960] text-white font-bold p-3 rounded hover:bg-[#29523d]"
+              className="w-full bg-[#a7dbac] text-black font-bold p-3 rounded hover:text-white hover:bg-[#29523d]"
             >
               Submit
             </button>

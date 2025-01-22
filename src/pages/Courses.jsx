@@ -1,56 +1,47 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa"; // For "Why Choose Us" icons
 
 const courses = [
   {
-    title: "Augmented & Virtual Reality Development",
+    title: "Graphic Design",
     description:
-      "Learn AR/VR development using Unity, Unreal Engine, and WebXR.",
+      "Master the art of visual communication by creating stunning designs for digital and print media using industry-leading tools like Adobe Photoshop, Illustrator, and InDesign.",
+    image: "course1.png", // Add correct image path
   },
   {
-    title: "Visual Effects (VFX) Masterclass",
+    title: "3D Animation",
     description:
-      "Master VFX techniques using Houdini, After Effects, and Nuke.",
-  },
-  {
-    title: "Game Development with Unity & Unreal",
-    description: "Build AAA-quality games with Unity and Unreal Engine.",
-  },
-  {
-    title: "3D Animation & Motion Graphics",
-    description: "Create stunning 3D animations with Blender and Maya.",
-  },
-  {
-    title: "AI & Machine Learning in Gaming",
-    description: "Explore AI-driven NPC behavior and game automation.",
+      "Bring your imagination to life by mastering the art of 3D animation with powerful tools like Blender, Maya, and Cinema 4D, creating captivating visual experiences.",
+    image: "course2.png", // Add correct image path
   },
 ];
 
 const Courses = () => {
   return (
-    <div className="max-w-5xl mx-auto p-8 text-gray-800">
-      <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
-        Our Courses
+    <div className="max-w-6xl py-24 mx-auto px-6 text-gray-800">
+      {/* Two Courses Section */}
+      <h1 className="text-4xl font-bold text-center text-[#599960] mb-12">
+        Courses
       </h1>
-      <p className="text-lg text-center mb-8">
-        Explore our industry-focused courses designed to take your Graphic
-        Design, VFX, and 3D Animation skills to the next level.
-      </p>
-      <div className="grid md:grid-cols-2 gap-6 justify-center">
+      <div className="grid md:grid-cols-2 gap-12">
         {courses.map((course, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 p-6 rounded-lg shadow-lg bg-white"
-          >
-            <h2 className="text-2xl font-semibold text-blue-500">
+          <div key={index} className="flex flex-col text-center items-center py-10 p-6 ">
+            <img
+              src={course.image}
+              alt={course.title}
+              className="mt-4 w-full h-64 object-cover rounded-lg"
+            />
+            <h2 className="text-3xl font-bold text-[#6ac2b2] mb-4">
               {course.title}
             </h2>
-            <p className="text-lg mt-2 text-gray-600">{course.description}</p>
+            <p className="text-lg text-gray-600">{course.description}</p>
           </div>
         ))}
       </div>
+
+     
     </div>
   );
 };
-
 
 export default Courses;

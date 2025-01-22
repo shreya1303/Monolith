@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
+  const [isOpaque, setIsOpaque] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutUsSection = document.getElementById("about-us");
+      if (aboutUsSection) {
+        const rect = aboutUsSection.getBoundingClientRect();
+        // Check if the heading is at the top of the viewport
+        if (rect.top <= 0) {
+          setIsOpaque(true); // Set to true when the section reaches the top
+        } else {
+          setIsOpaque(false); // Reset if the section is not at the top
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="text-white">
       {/* Hero Section */}
@@ -13,68 +35,37 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Us Section 
-      <section className="py-16 px-6 bg-[#e0e0e0] flex flex-col md:flex-row items-center justify-center">
-        
-        <div className="md:w-1/2 flex justify-center">
-          <img
-            src="about.jpg"
-            alt="About Us"
-            className="w-full max-w-md rounded-lg shadow-lg"
-          />
-        </div>
-
-     
-        <div className="md:w-1/2 mt-8 md:mt-0 md:pl-10 text-center md:text-left">
-          <h2 className="text-4xl font-semibold text-yellow-400">About Us</h2>
-          <p className="mt-4 text-gray-400">
-            At Monolith Academy, we are dedicated to shaping the next generation
-            of Graphic Designers, 3D Animators, and VFX Artists. Our
-            industry-focused courses provide hands-on training, equipping
-            students with the skills needed to thrive in the creative industry.
-            To ensure excellence in education, we conduct comprehensive faculty
-            training programs, keeping our instructors updated with the latest
-            tools and trends. With a structured curriculum, cutting-edge
-            facilities, and expert guidance, we bridge the gap between learning
-            and real-world application. Join us and take your first step toward
-            a successful career in digital design and animation!
-          </p>
-        </div>
-      </section> */}
-
       {/* About Us Section */}
-      {/* About Us Section */}
-      <section className="relative py-24 px-6 bg-white flex flex-col items-center justify-center min-h-screen">
-        {/* Background Circles
-        <div className="absolute top-0 left-[-50px] w-64 h-64 rounded-full bg-[#d5e5d8] opacity-70 z-0 transform translate-y-[30%] md:w-64 md:h-64 sm:w-48 sm:h-48 sm:left-[-30px]" />
-        <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 md:w-64 md:h-64 sm:w-48 sm:h-48 sm:right-[-30px]" />
-        <div className="absolute bottom-0 right-20 w-64 h-64 rounded-full bg-[#d9efec] opacity-70 z-0 md:w-64 md:h-64 sm:w-48 sm:h-48 sm:right-10 clip-path-circle" /> */}
-
+      <section
+        id="about-us"
+        className={`relative py-24 px-6 flex flex-col items-center justify-center min-h-screen transition-all duration-700 ease-in-out ${
+          isOpaque
+            ? "bg-white opacity-100"
+            : "bg-gradient-to-b from-transparent to-white opacity-90"
+        }`}
+      >
         {/* Content */}
         <div className="max-w-3xl w-full text-center px-4">
           <h2 className="text-6xl font-semibold text-[#599960] md:text-5xl sm:text-4xl">
             About Us
           </h2>
           <p className="mt-4 text-black text-xl leading-8 sm:text-lg sm:leading-7">
-            <span className="font-semibold" /> At Monolith Academy, we are
-            dedicated to shaping the next generation of Graphic Designers, 3D
-            Animators, and VFX Artists.
-            <br /> Our industry-focused courses provide hands-on training,
-            equipping students with the skills needed to thrive in the creative
-            industry.
-            <br /> To ensure excellence in education,
-            <br /> we conduct comprehensive faculty training programs, keeping
-            our instructors updated with the latest tools and trends.
-            <br /> With a structured curriculum, cutting-edge facilities, and
-            expert guidance, we bridge the gap between learning and real-world
-            application.
-            <br /> Join us and take your first step toward a successful career
-            in digital design and animation!
+            At Monolith Academy, we are dedicated to shaping the next generation
+            of Graphic Designers, 3D Animators, and VFX Artists. <br /> Our
+            industry-focused courses provide hands-on training, equipping
+            students with the skills needed to thrive in the creative industry.
+            <br /> To ensure excellence in education, we conduct comprehensive
+            faculty training programs, keeping our instructors updated with the
+            latest tools and trends. <br /> With a structured curriculum,
+            cutting-edge facilities, and expert guidance, we bridge the gap
+            between learning and real-world application. <br /> Join us and take
+            your first step toward a successful career in digital design and
+            animation!
           </p>
         </div>
       </section>
 
-      {/* Courses Section */}
+      {/* Other Sections */}
       <section className="py-16 px-6 bg-[#1a1a1a] flex flex-col items-center">
         <h2 className="text-4xl font-semibold text-center text-yellow-400">
           Courses We Provide

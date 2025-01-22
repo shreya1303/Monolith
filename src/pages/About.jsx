@@ -4,13 +4,13 @@ const About = () => {
   return (
     <div className="relative py-24 px-6 bg-white flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
       {/* Background Circles */}
-      <div className="absolute top-0 left-[-10%] w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 transform translate-y-[30%] md:w-48 md:h-48 sm:w-40 sm:h-40" />
+      {/* <div className="absolute top-0 left-[-10%] w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 transform translate-y-[30%] md:w-48 md:h-48 sm:w-40 sm:h-40" />
       <div className="absolute top-0 right-[-10%] w-56 h-56 rounded-full bg-[#ffe6e9] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" />
-      <div className="absolute bottom-0 right-[5%] w-56 h-56 rounded-full bg-[#d9efec] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" />
+      <div className="absolute bottom-0 right-[5%] w-56 h-56 rounded-full bg-[#d9efec] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" /> */}
 
       {/* Content */}
       <div className="max-w-3xl w-full text-center px-4">
-        <h2 className="text-6xl font-semibold text-[#599960] md:text-5xl sm:text-4xl">
+        <h2 className="text-4xl font-bold text-[#599960] md:text-4xl sm:text-xl">
           About Us
         </h2>
         <p className="mt-4 text-black text-xl leading-8 sm:text-lg sm:leading-7">
