@@ -8,11 +8,10 @@ const Home = () => {
       const aboutUsSection = document.getElementById("about-us");
       if (aboutUsSection) {
         const rect = aboutUsSection.getBoundingClientRect();
-        // Check if the heading is at the top of the viewport
         if (rect.top <= 0) {
-          setIsOpaque(true); // Set to true when the section reaches the top
+          setIsOpaque(true);
         } else {
-          setIsOpaque(false); // Reset if the section is not at the top
+          setIsOpaque(false);
         }
       }
     };
@@ -45,9 +44,9 @@ const Home = () => {
         }`}
       >
         {/* Background Circles */}
-        <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-48 md:h-48 sm:w-40 sm:h-40 pointer-events-none"></div>
-        <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-52 md:h-52 sm:w-44 sm:h-44 pointer-events-none"></div>
-        <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[30%] md:w-60 md:h-60 sm:w-50 sm:h-50 pointer-events-none"></div>
+        <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-56 md:h-56 sm:w-40 sm:h-40 pointer-events-none" />
+        <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-44 sm:h-44 pointer-events-none" />
+        <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-50 sm:h-50 pointer-events-none" />
 
         {/* Content */}
         <div className="relative max-w-3xl w-full text-center px-4 z-10">
@@ -71,30 +70,57 @@ const Home = () => {
       </section>
 
       {/* Other Sections */}
-      <section className="py-16 px-6 bg-white flex flex-col items-center">
-        <h2 className="text-4xl font-bold text-center text-[#599960] md:text-4xl sm:text-xl">
+      <section className="py-28 px-6 bg-white relative">
+        <h2 className="text-4xl font-bold text-center text-[#599960] md:text-4xl sm:text-2xl">
           Courses We Provide
         </h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
-          <div className="p-6 bg-[#0c0c0c] shadow-lg rounded-lg text-center border border-yellow-500">
-            <h3 className="text-2xl font-semibold text-yellow-300">
+
+        {/* Cards */}
+        <div className="mt-12 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto relative z-10">
+          {/* Card 1 */}
+          <div className="relative p-8 bg-[#ffffff] shadow-xl rounded-lg border border-[#f5979a] hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#f5979a] rounded-full flex items-center justify-center shadow-lg">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffffff/paint-palette.png"
+                alt="Graphic Design Icon"
+                className="w-8 h-8"
+              />
+            </div>
+            <h3 className="text-2xl font-semibold text-[#f5979a] mt-8">
               Graphic Design
             </h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-4 text-gray-700">
               Master the art of visual communication by creating stunning
               designs for digital and print media using industry-leading tools
               like Adobe Photoshop, Illustrator, and InDesign.
             </p>
           </div>
-          <div className="p-6 bg-[#0c0c0c] shadow-lg rounded-lg text-center border border-yellow-500">
-            <h3 className="text-2xl font-semibold text-yellow-300">
+
+          {/* Card 2 */}
+          <div className="relative p-8 bg-[#ffffff] shadow-xl rounded-lg border border-[#f5979a] hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#f5979a] rounded-full flex items-center justify-center shadow-lg">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffffff/3d-glasses.png"
+                alt="3D Animation Icon"
+                className="w-8 h-8"
+              />
+            </div>
+            <h3 className="text-2xl font-semibold text-[#f5979a] mt-8">
               3D Animation
             </h3>
-            <p className="mt-2 text-gray-400">
-              Master visual effects, 3D modeling, and animation using
-              industry-standard tools.
+            <p className="mt-4 text-gray-700">
+              Bring your imagination to life by mastering the art of 3D
+              animation with powerful tools like Blender, Maya, and Cinema 4D,
+              creating captivating visual experiences.
             </p>
           </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-12 flex justify-center">
+          <button className="px-6 py-3 bg-[#f5979a] text-white font-bold text-lg rounded-full shadow-md hover:bg-[#fc888c] transition-colors duration-300">
+            Details
+          </button>
         </div>
       </section>
     </div>

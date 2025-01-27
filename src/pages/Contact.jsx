@@ -41,17 +41,16 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen p-8 py-24 bg-white">
-      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-48 md:h-48 sm:w-40 sm:h-40 pointer-events-none"></div>
-      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-52 md:h-52 sm:w-44 sm:h-44 pointer-events-none"></div>
-      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[30%] md:w-60 md:h-60 sm:w-50 sm:h-50 pointer-events-none"></div>
-      {/* Heading */}
+      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-56 md:h-56 sm:w-40 sm:h-40 pointer-events-none"></div>
+      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-44 sm:h-44 pointer-events-none"></div>
+      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-50 sm:h-50 pointer-events-none"></div>
       <h1 className="text-6xl sm:text-xl md:text-4xl font-bold text-center mb-8 text-[#599960]">
         Contact Us
       </h1>
 
       <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 z-10">
         {/* Left Side: Contact Information */}
-        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border-2 border-black mb-6 md:mb-0">
+        <div className="w-full md:w-[600px] z-10 bg-white p-6 shadow-lg rounded-3xl border-2 border-black mb-6 md:mb-0">
           <div>
             <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
             <p>
