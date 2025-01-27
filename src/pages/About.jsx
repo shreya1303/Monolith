@@ -4,12 +4,12 @@ const About = () => {
   return (
     <div className="relative py-24 px-6 bg-white flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
       {/* Background Circles */}
-      {/* <div className="absolute top-0 left-[-10%] w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 transform translate-y-[30%] md:w-48 md:h-48 sm:w-40 sm:h-40" />
-      <div className="absolute top-0 right-[-10%] w-56 h-56 rounded-full bg-[#ffe6e9] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" />
-      <div className="absolute bottom-0 right-[5%] w-56 h-56 rounded-full bg-[#d9efec] opacity-70 z-0 md:w-48 md:h-48 sm:w-40 sm:h-40" /> */}
+      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-48 md:h-48 sm:w-40 sm:h-40 pointer-events-none"></div>
+      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-52 md:h-52 sm:w-44 sm:h-44 pointer-events-none"></div>
+      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[30%] md:w-60 md:h-60 sm:w-50 sm:h-50 pointer-events-none"></div>
 
       {/* Content */}
-      <div className="max-w-3xl w-full text-center px-4">
+      <div className="max-w-3xl w-full text-center px-4 z-10">
         <h2 className="text-4xl font-bold text-[#599960] md:text-4xl sm:text-xl">
           About Us
         </h2>
@@ -31,8 +31,8 @@ const About = () => {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="max-w-full overflow-hidden mt-20">
-        <h3 className="text-2xl font-semibold mt-6 text-gray-700">
+      <div className="max-w-full overflow-hidden mt-20 z-10">
+        <h3 className="text-4xl font-bold mt-6 text-[#599960] text-center md:text-4xl sm:text-xl">
           Why Choose Us?
         </h3>
         <ul className="list-disc ml-6 mt-4 text-lg text-gray-600 space-y-2">

@@ -20,12 +20,12 @@ const Courses = () => {
   return (
     <div className="max-w-6xl py-24 mx-auto px-6 text-gray-800">
       {/* Two Courses Section */}
-      <h1 className="text-4xl font-bold text-center text-[#599960] mb-12">
+      <h1 className="text-6xl font-bold text-center text-[#599960] mb-12 md:text-4xl sm:text-xl">
         Courses
       </h1>
       <div className="grid md:grid-cols-2 gap-12">
         {courses.map((course, index) => (
-          <div key={index} className="flex flex-col text-center items-center py-10 p-6 ">
+          <div key={index} className="flex flex-col text-center items-center py-6 p-6 ">
             <img
               src={course.image}
               alt={course.title}

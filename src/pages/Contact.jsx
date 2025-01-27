@@ -41,12 +41,15 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen p-8 py-24 bg-white">
+      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-48 md:h-48 sm:w-40 sm:h-40 pointer-events-none"></div>
+      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-52 md:h-52 sm:w-44 sm:h-44 pointer-events-none"></div>
+      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[30%] md:w-60 md:h-60 sm:w-50 sm:h-50 pointer-events-none"></div>
       {/* Heading */}
-      <h1 className="text-4xl sm:text-5xl md:text-4xl font-bold text-center mb-8 text-[#599960]">
+      <h1 className="text-6xl sm:text-xl md:text-4xl font-bold text-center mb-8 text-[#599960]">
         Contact Us
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6">
+      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 z-10">
         {/* Left Side: Contact Information */}
         <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border-2 border-black mb-6 md:mb-0">
           <div>
@@ -68,7 +71,7 @@ const Contact = () => {
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl border-2 border-black">
+        <div className="w-full md:w-[600px] bg-white p-6 shadow-lg rounded-3xl z-10 border-2 border-black">
           <h2 className="text-2xl font-bold mb-4 text-center">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
@@ -108,7 +111,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-[#a7dbac] text-black font-bold p-3 rounded hover:text-white hover:bg-[#29523d]"
+              className="w-full bg-[#484848] text-white font-bold p-3 rounded hover:text-white hover:bg-[#29523d]"
             >
               Submit
             </button>

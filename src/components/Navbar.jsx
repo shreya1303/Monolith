@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-10 ">
-      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-6 font-semibold py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="Monolith Academy Logo" className="h-12" />

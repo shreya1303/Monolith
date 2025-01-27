@@ -44,9 +44,14 @@ const Home = () => {
             : "bg-gradient-to-b from-transparent to-white opacity-90"
         }`}
       >
+        {/* Background Circles */}
+        <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-48 md:h-48 sm:w-40 sm:h-40 pointer-events-none"></div>
+        <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-52 md:h-52 sm:w-44 sm:h-44 pointer-events-none"></div>
+        <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[30%] md:w-60 md:h-60 sm:w-50 sm:h-50 pointer-events-none"></div>
+
         {/* Content */}
-        <div className="max-w-3xl w-full text-center px-4">
-          <h2 className="text-6xl font-semibold text-[#599960] md:text-5xl sm:text-4xl">
+        <div className="relative max-w-3xl w-full text-center px-4 z-10">
+          <h2 className="text-6xl font-bold text-[#599960] md:text-4xl sm:text-4xl">
             About Us
           </h2>
           <p className="mt-4 text-black text-xl leading-8 sm:text-lg sm:leading-7">
@@ -66,8 +71,8 @@ const Home = () => {
       </section>
 
       {/* Other Sections */}
-      <section className="py-16 px-6 bg-[#1a1a1a] flex flex-col items-center">
-        <h2 className="text-4xl font-semibold text-center text-yellow-400">
+      <section className="py-16 px-6 bg-white flex flex-col items-center">
+        <h2 className="text-4xl font-bold text-center text-[#599960] md:text-4xl sm:text-xl">
           Courses We Provide
         </h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
