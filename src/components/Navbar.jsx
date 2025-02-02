@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-10 ">
+    <nav className="fixed w-full z-50">
       <div className="container mx-auto px-6 font-semibold py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -15,31 +15,19 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-1 justify-center space-x-6">
-          <Link
-            to="/"
-            className="text-gray-800  relative group"
-          >
+          <Link to="/" className="text-gray-800 relative group">
             Home
             <span className="absolute bottom-[-6px] left-0 w-0 h-[3px] bg-[#f5979a] group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link
-            to="/about"
-            className="text-gray-800  relative group"
-          >
+          <Link to="/about" className="text-gray-800 relative group">
             About
             <span className="absolute bottom-[-6px] left-0 w-0 h-[3px] bg-[#f5979a] group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link
-            to="/courses"
-            className="text-gray-800 relative group"
-          >
+          <Link to="/courses" className="text-gray-800 relative group">
             Courses
             <span className="absolute bottom-[-6px] left-0 w-0 h-[3px] bg-[#f5979a] group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link
-            to="/contact"
-            className="text-gray-800  relative group"
-          >
+          <Link to="/contact" className="text-gray-800 relative group">
             Contact
             <span className="absolute bottom-[-6px] left-0 w-0 h-[3px] bg-[#f5979a] group-hover:w-full transition-all duration-300"></span>
           </Link>
