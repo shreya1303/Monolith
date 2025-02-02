@@ -44,10 +44,9 @@ const Home = () => {
         }`}
       >
         {/* Background Circles */}
-        <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-56 md:h-56 sm:w-40 sm:h-40 pointer-events-none" />
-        <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-44 sm:h-44 pointer-events-none" />
-        <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-50 sm:h-50 pointer-events-none" />
-
+        <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-56 md:h-56 sm:w-30 sm:h-30 pointer-events-none"></div>
+        <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-26 sm:h-26 pointer-events-none"></div>
+        <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-30 sm:h-30 pointer-events-none"></div>
         {/* Content */}
         <div className="relative max-w-3xl w-full text-center px-4 z-10">
           <h2 className="text-6xl font-bold text-[#599960] md:text-4xl sm:text-4xl">
