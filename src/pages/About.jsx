@@ -4,16 +4,16 @@ const About = () => {
   return (
     <div className="relative py-24 px-6 bg-white flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
       {/* Background Circles */}
-      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-52 md:h-52 sm:w-26 sm:h-26 pointer-events-none"></div>
-      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-22 sm:h-22 pointer-events-none"></div>
-      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-24 sm:h-24 pointer-events-none"></div>
+      <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
+      <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-20 sm:h-20 pointer-events-none"></div>
+      <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
 
       {/* Content */}
       <div className="max-w-3xl w-full text-center px-4 z-10">
         <h2 className="text-4xl font-bold text-[#599960] md:text-4xl sm:text-2xl">
           About Us
         </h2>
-        <p className="mt-4 text-black text-xl leading-8 md:text-lg sm:text-base sm:leading-7">
+        <p className="mt-4 text-black text-xl leading-8 md:text-lg sm:text-base sm:leading-7 !important">
           At Monolith Academy, we are dedicated to shaping the next generation
           of Graphic Designers, 3D Animators, and VFX Artists. <br />
           Our industry-focused courses provide hands-on training, equipping
