@@ -23,7 +23,7 @@ const Courses = () => {
       <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
-      <h1 className="text-6xl font-bold text-center text-[#599960] mb-12 md:text-4xl sm:text-xl">
+      <h1 className="text-6xl font-bold text-center text-[#599960] mb-12 md:text-4xl z-10 sm:text-2xl">
         Courses
       </h1>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-12">
@@ -40,7 +40,7 @@ const Courses = () => {
             <h2 className="text-3xl py-4 font-bold z-10 text-[#6ac2b2] mb-4 sm:text-lg md:text-xl">
               {course.title}
             </h2>
-            <p className="text-xl text-black z-10 sm:text-base md:text-lg">
+            <p className="mt-4 text-black text-lg leading-8 md:text-lg sm:text-base sm:leading-7">
               {course.description}
             </p>
           </div>

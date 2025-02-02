@@ -116,11 +116,11 @@ const Home = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 flex justify-center">
+        {/* <div className="mt-12 flex justify-center">
           <button className="px-6 py-3 bg-[#f5979a] text-white font-bold text-lg rounded-full shadow-md hover:bg-[#fc888c] transition-colors duration-300">
             Details
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );
