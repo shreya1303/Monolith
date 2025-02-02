@@ -25,7 +25,7 @@ const Courses = () => {
       <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-20 sm:h-20 sm:bottom-0 sm:right-[40%] pointer-events-none"></div>
 
       {/* Courses Heading */}
-      <h1 className="text-6xl font-bold text-center text-[#599960] mb-12 md:text-4xl sm:text-2xl relative z-10">
+      <h1 className="text-6xl font-bold text-center text-[#599960] mb-12 md:text-4xl sm:text-xl relative z-10">
         Courses
       </h1>
 

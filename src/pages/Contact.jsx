@@ -44,7 +44,7 @@ const Contact = () => {
       <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
-      <h1 className="text-6xl sm:text-2xl md:text-4xl font-bold text-center z-10 mb-8 text-[#599960]">
+      <h1 className="text-6xl sm:text-xl md:text-4xl font-bold text-center z-20 mb-8 text-[#599960]">
         Contact Us
       </h1>
 
