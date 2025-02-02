@@ -40,15 +40,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen p-8 py-24 bg-white">
+    <div className="min-h-screen p-8 py-24 bg-white relative">
+      {/* Circles */}
       <div className="absolute w-56 h-56 rounded-full bg-[#d5e5d8] opacity-70 z-0 top-0 left-0 md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-64 h-64 rounded-full bg-[#ffe6e9] opacity-70 z-0 top-[30%] right-0 md:w-56 md:h-56 sm:w-20 sm:h-20 pointer-events-none"></div>
       <div className="absolute w-72 h-72 rounded-full bg-[#d9efec] opacity-70 z-0 bottom-0 right-[40%] md:w-52 md:h-52 sm:w-20 sm:h-20 pointer-events-none"></div>
-      <h1 className="text-6xl sm:text-xl md:text-4xl font-bold text-center z-20 mb-8 text-[#599960]">
+
+      {/* Heading */}
+      <h1 className="text-6xl sm:text-xl md:text-4xl font-bold text-center z-10 mb-8 text-[#599960] relative">
         Contact Us
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 z-10">
+      {/* Contact form section */}
+      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 z-10 relative">
         {/* Left Side: Contact Information */}
         <div className="w-full md:w-[600px] z-10 bg-white p-6 shadow-lg rounded-3xl border-2 border-black mb-6 md:mb-0">
           <div>

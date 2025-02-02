@@ -10,7 +10,7 @@ const About = () => {
 
       {/* Content */}
       <div className="max-w-3xl w-full text-center px-4 z-10">
-        <h2 className="text-4xl font-bold text-[#599960] md:text-4xl sm:text-2xl">
+        <h2 className="text-6xl sm:text-xl md:text-4xl font-bold text-center mb-8 text-[#599960]">
           About Us
         </h2>
         <p className="mt-4 text-black text-lg leading-8 md:text-lg sm:text-base sm:leading-7">
