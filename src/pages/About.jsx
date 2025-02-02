@@ -13,7 +13,7 @@ const About = () => {
         <h2 className="text-4xl font-bold text-[#599960] md:text-4xl sm:text-2xl">
           About Us
         </h2>
-        <p className="mt-4 text-black text-xl leading-8 md:text-lg sm:text-base sm:leading-7 !important">
+        <p className="mt-4 text-black text-xl leading-8 md:text-lg sm:text-sm sm:leading-6 max-w-[90%] mx-auto">
           At Monolith Academy, we are dedicated to shaping the next generation
           of Graphic Designers, 3D Animators, and VFX Artists. <br />
           Our industry-focused courses provide hands-on training, equipping
