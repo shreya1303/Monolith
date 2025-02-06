@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [isOpaque, setIsOpaque] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640); // Track if screen is small (sm: breakpoint)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,9 +17,16 @@ const Home = () => {
       }
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640); // Update state based on screen width
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -28,7 +36,10 @@ const Home = () => {
       <section className="relative w-full h-screen">
         <div className="fixed top-0 left-0 w-full h-full -z-10">
           <video className="w-full h-full object-cover" autoPlay muted loop>
-            <source src="greeting_1.mp4" type="video/mp4" />
+            <source
+              src={isMobile ? "mobile_greeting.mp4" : "greeting_1.mp4"}
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -66,61 +77,6 @@ const Home = () => {
             animation!
           </p>
         </div>
-      </section>
-
-      {/* Other Sections */}
-      <section className="py-28 px-6 bg-white relative">
-        <h2 className="text-4xl font-bold text-center text-[#599960] md:text-4xl sm:text-2xl">
-          Courses We Provide
-        </h2>
-
-        {/* Cards */}
-        <div className="mt-12 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto relative z-10">
-          {/* Card 1 */}
-          <div className="relative p-8 bg-[#ffffff] shadow-xl rounded-lg border border-[#f5979a] hover:scale-105 transition-transform duration-300">
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#f5979a] rounded-full flex items-center justify-center shadow-lg">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/paint-palette.png"
-                alt="Graphic Design Icon"
-                className="w-8 h-8"
-              />
-            </div>
-            <h3 className="text-2xl font-semibold text-[#f5979a] mt-8">
-              Graphic Design
-            </h3>
-            <p className="mt-4 text-gray-700">
-              Master the art of visual communication by creating stunning
-              designs for digital and print media using industry-leading tools
-              like Adobe Photoshop, Illustrator, and InDesign.
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="relative p-8 bg-[#ffffff] shadow-xl rounded-lg border border-[#f5979a] hover:scale-105 transition-transform duration-300">
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#f5979a] rounded-full flex items-center justify-center shadow-lg">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/3d-glasses.png"
-                alt="3D Animation Icon"
-                className="w-8 h-8"
-              />
-            </div>
-            <h3 className="text-2xl font-semibold text-[#f5979a] mt-8">
-              3D Animation
-            </h3>
-            <p className="mt-4 text-gray-700">
-              Bring your imagination to life by mastering the art of 3D
-              animation with powerful tools like Blender, Maya, and Cinema 4D,
-              creating captivating visual experiences.
-            </p>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        {/* <div className="mt-12 flex justify-center">
-          <button className="px-6 py-3 bg-[#f5979a] text-white font-bold text-lg rounded-full shadow-md hover:bg-[#fc888c] transition-colors duration-300">
-            Details
-          </button>
-        </div> */}
       </section>
     </div>
   );
