@@ -35,8 +35,15 @@ const Home = () => {
     <div className="text-white">
       {/* Hero Section */}
       <section className="relative w-full h-screen">
-        <div className="fixed top-0 left-0 w-full h-full -z-10">
-          <video className="w-full h-full object-cover" autoPlay muted loop>
+        {/* Video Container */}
+        <div className="absolute inset-0 w-full h-full -z-10 overflow-hidden">
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
             <source
               src={isMobile ? "mobile_greeting.mp4" : "greeting_1.mp4"}
               type="video/mp4"
@@ -128,7 +135,6 @@ const Home = () => {
         </div>
 
         {/* Call to Action */}
-        
       </section>
     </div>
   );
