@@ -57,7 +57,7 @@ const Footer = () => {
           <ul className="text-gray-400 space-y-2">
             <li>
               <Link
-                to="/about"
+                to="/About"
                 className="hover:text-white transition "
                 onClick={handleLinkClick}
               >
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/courses"
+                to="/Courses"
                 className="hover:text-white transition"
                 onClick={handleLinkClick}
               >
@@ -75,7 +75,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/Contact"
                 className="hover:text-white transition"
                 onClick={handleLinkClick}
               >
