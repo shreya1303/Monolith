@@ -12,6 +12,11 @@ import {
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Dynamic Year
 
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setMenuOpen(false); // Close mobile menu if open
+  };
+
   return (
     <footer className="bg-[#0E0E20] text-white py-10">
       <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
@@ -27,7 +32,6 @@ const Footer = () => {
             Animation, and VFX, shaping creative minds for the industry.
           </p>
           <div className="flex justify-center sm:justify-start space-x-3 mt-4">
-            
             <a
               href="https://www.instagram.com/cominggsoon.l?igsh=MXc1dnYxMzRpamZqcg=="
               target="_blank"
@@ -52,28 +56,40 @@ const Footer = () => {
           <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           <ul className="text-gray-400 space-y-2">
             <li>
-              <Link to="/about" className="hover:text-white transition">
+              <Link
+                to="/about"
+                className="hover:text-white transition "
+                onClick={handleLinkClick}
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/courses" className="hover:text-white transition">
+              <Link
+                to="/courses"
+                className="hover:text-white transition"
+                onClick={handleLinkClick}
+              >
                 Courses
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-white transition">
+              <Link
+                to="/contact"
+                className="hover:text-white transition"
+                onClick={handleLinkClick}
+              >
                 Contact Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/privacy-policy"
                 className="hover:text-white transition"
               >
                 Privacy Policy
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
