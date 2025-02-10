@@ -45,7 +45,7 @@ const Home = () => {
             playsInline
           >
             <source
-              src={isMobile ? "mobile_greeting.mp4" : "greeting_1.mp4"}
+              src={isMobile ? "mobile_greeting_1.mp4" : "greeting_1.mp4"}
               type="video/mp4"
             />
             Your browser does not support the video tag.
