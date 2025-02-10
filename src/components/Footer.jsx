@@ -124,7 +124,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
         © {currentYear} Monolith Academy - Developed by{" "}
-        <span className="text-white-500">xyz</span>
+        <span className="text-white-500">Shreya Mohod</span>
       </div>
     </footer>
   );
