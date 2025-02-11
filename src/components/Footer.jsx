@@ -33,7 +33,7 @@ const Footer = () => {
           </p>
           <div className="flex justify-center sm:justify-start space-x-3 mt-4">
             <a
-              href="https://www.instagram.com/cominggsoon.l?igsh=MXc1dnYxMzRpamZqcg=="
+              href="https://www.instagram.com/monolithacademyofficial?igsh=MXc1dnYxMzRpamZqcg=="
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-gray-700 rounded-full hover:bg-gray-600"
@@ -133,88 +133,3 @@ const Footer = () => {
 export default Footer;
 
 
-<div className="relative">
-  {/* Timeline Line shifted to the left */}
-  <div className="absolute left-1/3 w-px h-full bg-gray-300 top-0 z-10"></div>
-  {/* First Month */}
-  <div className="flex items-center mb-12 relative">
-    <div className="w-12 h-12 rounded-full bg-[#6ac2b2] text-white flex items-center justify-center font-semibold absolute left-1/3 transform -translate-x-1/2 z-20">
-      1
-    </div>
-    <div className="ml-16 pl-8">
-      <h2 className="text-3xl font-semibold text-[#6ac2b2] mb-4">
-        First Month: Foundations
-      </h2>
-      <ul className="pl-8 text-left text-lg md:text-base space-y-2">
-        <li>Design Principles</li>
-        <li>Color Theory</li>
-        <li>Typography Basics</li>
-        <li>Visual Communication</li>
-        <li>Elements of Designing</li>
-      </ul>
-    </div>
-  </div>
-  Second Month
-  <div className="flex items-center mb-12 relative">
-    <div className="w-12 h-12 rounded-full bg-[#6ac2b2] text-white flex items-center justify-center font-semibold absolute left-1/3 transform -translate-x-1/2 z-20">
-      2
-    </div>
-    <div className="ml-16 pl-8">
-      <h2 className="text-3xl font-semibold text-[#6ac2b2] mb-4">
-        Second Month: Software Skills
-      </h2>
-      <ul className="pl-8 text-left text-lg md:text-base space-y-2">
-        <li>Adobe Photoshop</li>
-        <li>Photo Editing</li>
-        <li>Layer Techniques</li>
-        <li>Image Manipulation</li>
-        <li>CorelDRAW</li>
-        <li>Vector Graphics</li>
-        <li>Design Creation</li>
-        <li>Adobe Illustrator</li>
-        <li>Vector Drawing</li>
-        <li>Advanced Compositing</li>
-        <li>UI/UX Design</li>
-      </ul>
-    </div>
-  </div>
-  {/* Third Month */}
-  <div className="flex items-center mb-12 relative">
-    <div className="w-12 h-12 rounded-full bg-[#6ac2b2] text-white flex items-center justify-center font-semibold absolute left-1/3 transform -translate-x-1/2 z-20">
-      3
-    </div>
-    <div className="ml-16 pl-8">
-      <h2 className="text-3xl font-semibold text-[#6ac2b2] mb-4">
-        Third Month: Advanced Designing
-      </h2>
-      <ul className="pl-8 text-left text-lg md:text-base space-y-2">
-        <li>Publication Design</li>
-        <li>Branding Concepts</li>
-        <li>Layout Design</li>
-        <li>Digital Illustration</li>
-        <li>Professional Design Techniques</li>
-        <li>Concept of Photography</li>
-        <li>Advanced Camera Techniques</li>
-        <li>Developing Your Style and Portfolio</li>
-      </ul>
-    </div>
-  </div>
-  {/* Fourth Month */}
-  <div className="flex items-center relative">
-    <div className="w-12 h-12 rounded-full bg-[#6ac2b2] text-white flex items-center justify-center font-semibold absolute left-1/3 transform -translate-x-1/2 z-20">
-      4
-    </div>
-    <div className="ml-16 pl-8">
-      <h2 className="text-3xl font-semibold text-[#6ac2b2] mb-4">
-        Fourth Month: Professional Preparation
-      </h2>
-      <ul className="pl-8 text-left text-lg md:text-base space-y-2">
-        <li>Portfolio Development</li>
-        <li>Design Project</li>
-        <li>Industry Workflow</li>
-        <li>Printing Technologies</li>
-        <li>Career Guidance</li>
-      </ul>
-    </div>
-  </div>
-</div>;
