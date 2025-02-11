@@ -64,7 +64,7 @@ const Contact = () => {
               <strong>Email:</strong> monolithacademyofficial@gmail.com
             </p>
             <p>
-              <strong>Address:</strong> A8, Gatayri Apt., Bhande Plot chouk,
+              <strong>Address:</strong> A8, Gayatri Apt., Bhande Plot chouk,
               Shakkardara, Nagpur. 440024
             </p>
             <p>
