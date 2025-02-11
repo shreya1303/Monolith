@@ -99,7 +99,7 @@ const Footer = () => {
           <ul className="text-gray-400 space-y-3">
             <li className="flex items-center">
               <FaMapMarkerAlt className="mr-2" /> A8, Gayatri Apt., Bhande Plot
-              chouk, Shakkardara , Nagpur. 440024
+              chouk, Sakkardara , Nagpur. 440024
             </li>
             <li className="flex items-center">
               <FaPhoneAlt className="mr-2" />
