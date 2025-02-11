@@ -81,8 +81,8 @@ const Graphic = () => {
               <div className="w-6 h-6 bg-[#6ac2b2] rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
 
               {/* Event Content */}
-              <div className="w-5/12 bg-white shadow-lg p-6 rounded-lg">
-                <h2 className="text-2xl font-semibold text-[#6ac2b2] mb-2 lg:text-xl md:text-lg sm:text-base">
+              <div className="w-5/12">
+                <h2 className="text-2xl font-semibold text-left text-[#6ac2b2] mb-2 lg:text-xl md:text-lg sm:text-base mt-4 sm:mt-0">
                   {event.title}
                 </h2>
                 <ul className="list-none text-lg lg:text-base md:text-sm sm:text-xs text-left">
