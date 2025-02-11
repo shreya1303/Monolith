@@ -98,7 +98,7 @@ const Footer = () => {
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
           <ul className="text-gray-400 space-y-3">
             <li className="flex items-center">
-              <FaMapMarkerAlt className="mr-2" /> A8, Gatayri Apt., Bhande Plot
+              <FaMapMarkerAlt className="mr-2" /> A8, Gayatri Apt., Bhande Plot
               chouk, Shakkardara , Nagpur. 440024
             </li>
             <li className="flex items-center">
